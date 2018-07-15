@@ -78,41 +78,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本文主要介绍了JAVASCript中的Undefine<br><!-->more<--></p>
-<ol>
-<li>undefined的出现情况</li>
-</ol>
-<ul>
-<li>变量未声明</li>
-<li>变量已声明，未赋值</li>
-<li>使用的对象属性未声明（类似于变量未声明）</li>
-</ul>
-<ol start="2">
-<li><p>undefined与null的区别和联系</p>
-<blockquote>
-<p>undefined:未定义  。解析器不知道其为何物</p>
-<p>null:空。JS的解析器已经知道有这么一个变量存在，其值为”空”。其概念类似于””(空字符串)。<font color="red">【其在内存中仍然占用了一个指针，即使其指向为空??? 此处留待考证】</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a;b=null;</span><br><span class="line">a==b :true</span><br><span class="line">a===b:false</span><br><span class="line">typeof(a):undefined</span><br><span class="line">typeof(b):object</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>undefined导致的后果(各种莫名奇妙的错误)</p>
-<ol>
-<li><p>出错语句后续代码不执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a;b=&apos;倒霉蛋&apos;;</span><br><span class="line">alert(a);</span><br><span class="line">alert(b);//&lt;font color=&quot;green&quot;&gt;倒霉蛋是无法显示的。JS解析器解析到了错误代码，跳过了这一段代码&lt;/font&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在实际工程中偶然碰见这一错误：</p>
-<blockquote>
-<p><font color="blue">Maximum call stack size exceeded</font><br>发生于发起AJAX请求传入参数时，<font color="red">一般来说这一错误发生于循环调用,因为我没有涉及到循环所以开始排查上面的代码。</font><br>网上也有一位朋友也是因为这一失误莫名其妙产生了这一错误。<br><a href="http://www.cnblogs.com/dunitian/p/5865725.html" target="_blank" rel="noopener">http://www.cnblogs.com/dunitian/p/5865725.html</a></p>
-</blockquote>
-</li>
-</ol>
-</li>
-</ol>
-
+        <p>本文主要介绍了JAVASCript中的Undefine<br>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/15/JAVA中的undefine/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/15/JAVA中的undefine/" data-id="cjjmmapjn000008cmxnb8nc31" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/15/JAVA中的undefine/" data-id="cjjmmbwi20000zgcmxpctnn04" class="article-share-link">Share</a>
       
       
     </footer>
